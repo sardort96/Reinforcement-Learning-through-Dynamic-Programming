@@ -5,6 +5,7 @@ Reinforcement learning uses information that is provided on the level of correct
 ## Problem Domain
 We tackle the problem of learning how to play a modified game of Chutes and Ladders optimally. The modified version of the game has four different types of die: black, red, green, and blue with different numbers on them (Table 1). On each move, the agent has a choice to select any one of the four dice and use the result of the roll for the action. Based on the numbers the dice have, the agent can opt to choose a die that has a higher probability of avoiding a chute or reaching a ladder square. The modified version is necessary because the
 original version has no strategic element, since each move is dependent on a random number (1-6) from a spinner. The agent’s goal is to reach Square 100 (the final state) starting from Square 0 in the least number of turns.
+
 ![](table1.PNG)
 ## Dynamic Programming 
 We use dynamic programming as an approach in finding the optimal strategy for playing the game. Dynamic programming allows us to tackle the problem off-line by breaking it down into simpler subproblems. The essence of dynamic programming is in the fact that we do not solve our subproblems repeatedly. Instead, we memorize their solutions for later use.
